@@ -2,6 +2,52 @@
 function App() {
   return (
     <div className="wrapper clear">
+      <div className="overlay">
+      <div className="drawer">
+        <h2 className=" d-flex justify-between mb-30">Карзина <img className="removeBtn cu-p" src="/IMG/btn-remove.svg" alt="Remove"/></h2>
+        <div className="items">        
+          <div className="cartItem d-flex align-centerm mb-20">
+            <div style={{backgroundImage: 'url(/IMG/sneakers/01.jpg)'}} className="cartItemImg"></div>
+            <div className="mr-20">
+              <p className="mb-5">Мужские Кроссовки Nike Blazer Mid Suede</p>
+              <b>12 999 руб.</b>
+            </div>
+            <img className="removeBtn" src="/IMG/btn-remove.svg" alt="Remove"/>
+          </div>
+          <div className="cartItem d-flex align-centerm mb-20">
+            <div style={{backgroundImage: 'url(/IMG/sneakers/01.jpg)'}} className="cartItemImg"></div>
+            <div className="mr-20">
+              <p className="mb-5">Мужские Кроссовки Nike Blazer Mid Suede</p>
+              <b>12 999 руб.</b>
+            </div>
+            <img className="removeBtn" src="/IMG/btn-remove.svg" alt="Remove"/>
+          </div>
+          <div className="cartItem d-flex align-centerm mb-20">
+            <div style={{backgroundImage: 'url(/IMG/sneakers/01.jpg)'}} className="cartItemImg"></div>
+            <div className="mr-20">
+              <p className="mb-5">Мужские Кроссовки Nike Blazer Mid Suede</p>
+              <b>12 999 руб.</b>
+            </div>
+            <img className="removeBtn" src="/IMG/btn-remove.svg" alt="Remove"/>
+          </div>
+        </div>
+        <div className="cartTotalBlock">
+          <ul>
+            <li>
+              <span>Итого:</span>
+              <div></div>
+              <b> 21 498 руб.</b>
+            </li>
+            <li>
+              <span>Налог 5%:</span>
+              <div></div>
+              <b>1074 руб.</b>
+            </li>
+          </ul>
+          <button className="greenBtn">Оформить заказ <img src="IMG/arrow.svg" alt="" /> </button>
+        </div>
+      </div>
+      </div>
       <header className="d-flex justify-between align-center p-40">    
         <div className="d-flex align-center">
           <img width={40} height={40} src="/IMG/logo.png" alt=""/>
@@ -30,6 +76,9 @@ function App() {
         </div>
         <div className="d-flex">
         <div className="card">
+          <div className="favorite">
+            <img src="/IMG/heart-unliked.svg" alt=""/>
+          </div>
           <img width={133} height={112} src="/IMG/sneakers/01.jpg" alt=""/>
           <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
           <div className="d-flex justify-between align-center">
@@ -43,7 +92,8 @@ function App() {
           </div>
         </div>
         <div className="card">
-          <img width={133} height={112} src="/IMG/sneakers/02.jpg" alt=""/>
+          <img src="/IMG/heart-unliked.svg" alt=""/>
+          <img width={133} height={112} src="/IMG/sneakers/02.jpg" alt="Unliked"/>
           <h5>Мужские Кроссовки Nike Air Max 270</h5>
           <div className="d-flex justify-between align-center">
             <div className="d-flex flex-column">
