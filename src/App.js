@@ -26,7 +26,8 @@ function App() {
             title={obj.title}
             price={obj.price}
             imageUrl={obj.imageUrl}
-            presClick={() => console.log(obj)}
+            onFavorite={() => console.log('Дабавлю в закладки')}
+            onPlus={() => console.log('Поставил лайк')}
             />
           ))}
         </div>
